@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-build-decoupled-document",
+  "name": "@ckeditor-5/document",
   "version": "31.0.0",
   "description": "The document editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
@@ -53,6 +53,7 @@
     "@ckeditor/ckeditor5-dev-utils": "^25.4.0",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^25.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^31.0.0",
+    "@ckeditor/ckeditor5-upload": "^31.0.0",
     "postcss-loader": "^3.0.0",
     "raw-loader": "^4.0.1",
     "style-loader": "^1.2.1",
@@ -67,14 +68,19 @@
   "author": "CKSource (http://cksource.com/)",
   "license": "GPL-2.0-or-later",
   "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git",
+    "url": "git+https://github.com/ckeditor/ckeditor5.git",
     "directory": "packages/ckeditor5-build-decoupled-document"
   },
   "scripts": {
     "build": "webpack --mode production",
     "preversion": "npm run build"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
